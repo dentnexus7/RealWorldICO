@@ -50,6 +50,12 @@ contract('GreggTokenCrowdsale', function([_, wallet, investor1, investor2]) {
         this.icoStage = 1;
         this.icoRate = 250;
 
+        // Token distribution
+        this.tokenSalePercentage  = 70;
+        this.foundersPercentage   = 10;
+        this.foundationPercentage = 10;
+        this.partnersPercentage   = 10;
+
         // Crowdsale deploy
         this.crowdsale = await GreggTokenCrowdsale.new(
           this.rate, 
@@ -291,9 +297,41 @@ contract('GreggTokenCrowdsale', function([_, wallet, investor1, investor2]) {
           const paused = await this.token.paused();
           paused.should.be.false;
 
+          // Transfers ownership to the wallet
+          const owner = await this.token.owner();
+          owner.should.equal(this.wallet);
+
           // Prevents investor from claiming refund
           await this.vault.refund(investor1, { from: investor1 }).should.be.rejectedWith(EVMRevert);
         });
+      });
+    });
+
+    describe('token distribution', function() {
+      beforeEach(async function() {
+        const tokenSalePercentage = await this.crowdsale.tokenSalePercentage();
+        const foundersPercentage = await this.crowdsale.foundersPercentage();
+        const foundationPercentage = await this.crowdsale.foundationPercentage();
+        const partnersPercentage = await this.crowdsale.partnersPercentage();
+      });
+
+      it('tracks token distribution correctly', async function() {
+        assert.equal(tokenSalePercentage.toNumber(), this.tokenSalePercentage, 'has correct tokenSalePercentage');
+        //tokenSalePercentage.should.be.bignumber.eq(this.tokenSalePercentage, 'has correct tokenSalePercentage');
+
+        assert.equal(foundersPercentage.toNumber(), this.foundersPercentage, 'has correct foundersPercentage');
+        //foundersPercentage.should.be.bignumber.eq(this.foundersPercentage, 'has correct foundersPercentage');
+
+        assert.equal(foundationPercentage.toNumber(), this.foundationPercentage, 'has correct foundationPercentage');
+        //foundationPercentage.should.be.bignumber.eq(this.foundationPercentage, 'has correct foundationPercentage');
+
+        assert.equal(partnersPercentage.toNumber(), this.partnersPercentage, 'has correct partnersPercentage');
+        //partnersPercentage.should.be.bignumber.eq(this.partnersPercentage, 'has correct partnersPercentage');
+      });
+
+      it('is a valid percentage breakdown', async function () {
+        const total = tokenSalePercentage.toNumber() + foundersPercentage.toNumber() + foundationPercentage.toNumber() + partnersPercentage.toNumber()
+        total.should.equal(100);
       });
     });
 });
