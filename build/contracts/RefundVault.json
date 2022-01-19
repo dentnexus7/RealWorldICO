@@ -646,10 +646,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2073,
-                        2074
+                        2335,
+                        2336
                       ],
-                      "referencedDeclaration": 2073,
+                      "referencedDeclaration": 2335,
                       "src": "726:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -921,10 +921,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2073,
-                        2074
+                        2335,
+                        2336
                       ],
-                      "referencedDeclaration": 2073,
+                      "referencedDeclaration": 2335,
                       "src": "929:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1010,7 +1010,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2070,
+                            "referencedDeclaration": 2332,
                             "src": "1011:3:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1276,10 +1276,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2073,
-                        2074
+                        2335,
+                        2336
                       ],
-                      "referencedDeclaration": 2073,
+                      "referencedDeclaration": 2335,
                       "src": "1070:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1416,7 +1416,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2097,
+                              "referencedDeclaration": 2359,
                               "src": "1175:4:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_RefundVault_$549",
@@ -1657,10 +1657,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2073,
-                        2074
+                        2335,
+                        2336
                       ],
-                      "referencedDeclaration": 2073,
+                      "referencedDeclaration": 2335,
                       "src": "1246:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1914,10 +1914,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2073,
-                        2074
+                        2335,
+                        2336
                       ],
-                      "referencedDeclaration": 2073,
+                      "referencedDeclaration": 2335,
                       "src": "1438:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2759,10 +2759,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                2073,
-                                2074
+                                2335,
+                                2336
                               ],
-                              "referencedDeclaration": 2073,
+                              "referencedDeclaration": 2335,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -3109,10 +3109,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                2073,
-                                2074
+                                2335,
+                                2336
                               ],
-                              "referencedDeclaration": 2073,
+                              "referencedDeclaration": 2335,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -3349,7 +3349,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 2070,
+                                      "referencedDeclaration": 2332,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -3475,10 +3475,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                2073,
-                                2074
+                                2335,
+                                2336
                               ],
-                              "referencedDeclaration": 2073,
+                              "referencedDeclaration": 2335,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -3780,7 +3780,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 2097,
+                                      "referencedDeclaration": 2359,
                                       "type": "contract RefundVault",
                                       "value": "this"
                                     },
@@ -3906,10 +3906,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                2073,
-                                2074
+                                2335,
+                                2336
                               ],
-                              "referencedDeclaration": 2073,
+                              "referencedDeclaration": 2335,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -4205,10 +4205,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                2073,
-                                2074
+                                2335,
+                                2336
                               ],
-                              "referencedDeclaration": 2073,
+                              "referencedDeclaration": 2335,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -4636,7 +4636,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-19T23:00:09.370Z",
+  "updatedAt": "2022-01-19T23:27:41.795Z",
   "devdoc": {
     "methods": {
       "deposit(address)": {

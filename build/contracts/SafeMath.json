@@ -306,7 +306,7 @@
                       "name": "assert",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2059,
+                      "referencedDeclaration": 2321,
                       "src": "539:6:9",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
@@ -692,7 +692,7 @@
                       "name": "assert",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2059,
+                      "referencedDeclaration": 2321,
                       "src": "1115:6:9",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
@@ -1022,7 +1022,7 @@
                       "name": "assert",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2059,
+                      "referencedDeclaration": 2321,
                       "src": "1304:6:9",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
@@ -1542,7 +1542,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2059,
+                              "referencedDeclaration": 2321,
                               "type": "function (bool) pure",
                               "value": "assert"
                             },
@@ -1994,7 +1994,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2059,
+                              "referencedDeclaration": 2321,
                               "type": "function (bool) pure",
                               "value": "assert"
                             },
@@ -2352,7 +2352,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 2059,
+                              "referencedDeclaration": 2321,
                               "type": "function (bool) pure",
                               "value": "assert"
                             },
@@ -2468,7 +2468,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-19T23:00:09.380Z",
+  "updatedAt": "2022-01-19T23:27:41.806Z",
   "devdoc": {
     "methods": {},
     "title": "SafeMath"

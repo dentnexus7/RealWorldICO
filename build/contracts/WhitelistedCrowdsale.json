@@ -443,10 +443,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2073,
-                        2074
+                        2335,
+                        2336
                       ],
-                      "referencedDeclaration": 2073,
+                      "referencedDeclaration": 2335,
                       "src": "459:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1250,7 +1250,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2112,
+                        "referencedDeclaration": 2374,
                         "src": "1662:5:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_WhitelistedCrowdsale_$824",
@@ -1638,10 +1638,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                2073,
-                                2074
+                                2335,
+                                2336
                               ],
-                              "referencedDeclaration": 2073,
+                              "referencedDeclaration": 2335,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -2625,7 +2625,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 2112,
+                                  "referencedDeclaration": 2374,
                                   "type": "contract super WhitelistedCrowdsale",
                                   "value": "super"
                                 },
@@ -2702,7 +2702,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-19T23:00:09.376Z",
+  "updatedAt": "2022-01-19T23:27:41.802Z",
   "devdoc": {
     "methods": {
       "addManyToWhitelist(address[])": {
