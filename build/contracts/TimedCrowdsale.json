@@ -365,7 +365,7 @@
                               "name": "block",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1915,
+                              "referencedDeclaration": 2004,
                               "src": "480:5:6",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_block",
@@ -428,7 +428,7 @@
                               "name": "block",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1915,
+                              "referencedDeclaration": 2004,
                               "src": "514:5:6",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_block",
@@ -488,10 +488,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1928,
-                        1929
+                        2017,
+                        2018
                       ],
-                      "referencedDeclaration": 1928,
+                      "referencedDeclaration": 2017,
                       "src": "472:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -580,7 +580,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1915,
+                            "referencedDeclaration": 2004,
                             "src": "886:5:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -619,10 +619,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1928,
-                        1929
+                        2017,
+                        2018
                       ],
-                      "referencedDeclaration": 1928,
+                      "referencedDeclaration": 2017,
                       "src": "862:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -708,10 +708,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1928,
-                        1929
+                        2017,
+                        2018
                       ],
-                      "referencedDeclaration": 1928,
+                      "referencedDeclaration": 2017,
                       "src": "908:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -936,7 +936,7 @@
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1915,
+                        "referencedDeclaration": 2004,
                         "src": "1288:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
@@ -1093,7 +1093,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1949,
+                        "referencedDeclaration": 2038,
                         "src": "1627:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_TimedCrowdsale_$723",
@@ -1456,10 +1456,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1928,
-                                1929
+                                2017,
+                                2018
                               ],
-                              "referencedDeclaration": 1928,
+                              "referencedDeclaration": 2017,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -1515,7 +1515,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 1915,
+                                          "referencedDeclaration": 2004,
                                           "type": "block",
                                           "value": "block"
                                         },
@@ -1580,7 +1580,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 1915,
+                                          "referencedDeclaration": 2004,
                                           "type": "block",
                                           "value": "block"
                                         },
@@ -1757,10 +1757,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1928,
-                                1929
+                                2017,
+                                2018
                               ],
-                              "referencedDeclaration": 1928,
+                              "referencedDeclaration": 2017,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -1815,7 +1815,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1915,
+                                      "referencedDeclaration": 2004,
                                       "type": "block",
                                       "value": "block"
                                     },
@@ -1869,10 +1869,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1928,
-                                1929
+                                2017,
+                                2018
                               ],
-                              "referencedDeclaration": 1928,
+                              "referencedDeclaration": 2017,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -2151,7 +2151,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1915,
+                                  "referencedDeclaration": 2004,
                                   "type": "block",
                                   "value": "block"
                                 },
@@ -2352,7 +2352,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1949,
+                                  "referencedDeclaration": 2038,
                                   "type": "contract super TimedCrowdsale",
                                   "value": "super"
                                 },
@@ -2429,7 +2429,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-19T22:08:54.377Z",
+  "updatedAt": "2022-01-19T22:18:00.156Z",
   "devdoc": {
     "methods": {
       "buyTokens(address)": {

@@ -559,10 +559,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1928,
-                        1929
+                        2017,
+                        2018
                       ],
-                      "referencedDeclaration": 1928,
+                      "referencedDeclaration": 2017,
                       "src": "737:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -819,10 +819,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1928,
-                        1929
+                        2017,
+                        2018
                       ],
-                      "referencedDeclaration": 1928,
+                      "referencedDeclaration": 2017,
                       "src": "939:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -909,10 +909,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1928,
-                        1929
+                        2017,
+                        2018
                       ],
-                      "referencedDeclaration": 1928,
+                      "referencedDeclaration": 2017,
                       "src": "965:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -949,7 +949,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1925,
+                          "referencedDeclaration": 2014,
                           "src": "1008:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1334,7 +1334,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1955,
+                        "referencedDeclaration": 2044,
                         "src": "1442:5:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_RefundableCrowdsale_$380",
@@ -1420,7 +1420,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1925,
+                          "referencedDeclaration": 2014,
                           "src": "1625:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1458,7 +1458,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1925,
+                            "referencedDeclaration": 2014,
                             "src": "1614:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1880,10 +1880,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1928,
-                                1929
+                                2017,
+                                2018
                               ],
-                              "referencedDeclaration": 1928,
+                              "referencedDeclaration": 2017,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -2182,10 +2182,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1928,
-                                1929
+                                2017,
+                                2018
                               ],
-                              "referencedDeclaration": 1928,
+                              "referencedDeclaration": 2017,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -2243,10 +2243,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1928,
-                                1929
+                                2017,
+                                2018
                               ],
-                              "referencedDeclaration": 1928,
+                              "referencedDeclaration": 2017,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -2391,7 +2391,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1925,
+                                  "referencedDeclaration": 2014,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -2822,7 +2822,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1955,
+                                  "referencedDeclaration": 2044,
                                   "type": "contract super RefundableCrowdsale",
                                   "value": "super"
                                 },
@@ -3004,7 +3004,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1925,
+                                      "referencedDeclaration": 2014,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -3040,7 +3040,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1925,
+                                  "referencedDeclaration": 2014,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -3089,7 +3089,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-19T22:08:54.372Z",
+  "updatedAt": "2022-01-19T22:18:00.150Z",
   "devdoc": {
     "methods": {
       "buyTokens(address)": {
