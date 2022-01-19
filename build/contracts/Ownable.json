@@ -289,7 +289,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1914,
+                        "referencedDeclaration": 1925,
                         "src": "575:3:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -378,7 +378,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1914,
+                            "referencedDeclaration": 1925,
                             "src": "705:3:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -432,10 +432,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1917,
-                        1918
+                        1928,
+                        1929
                       ],
-                      "referencedDeclaration": 1917,
+                      "referencedDeclaration": 1928,
                       "src": "697:7:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -924,10 +924,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1917,
-                        1918
+                        1928,
+                        1929
                       ],
-                      "referencedDeclaration": 1917,
+                      "referencedDeclaration": 1928,
                       "src": "1400:7:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1404,7 +1404,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1914,
+                                  "referencedDeclaration": 1925,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -1483,10 +1483,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1917,
-                                1918
+                                1928,
+                                1929
                               ],
-                              "referencedDeclaration": 1917,
+                              "referencedDeclaration": 1928,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -1527,7 +1527,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1914,
+                                      "referencedDeclaration": 1925,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -2052,10 +2052,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1917,
-                                1918
+                                1928,
+                                1929
                               ],
-                              "referencedDeclaration": 1917,
+                              "referencedDeclaration": 1928,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -2318,7 +2318,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-19T18:45:26.257Z",
+  "updatedAt": "2022-01-19T22:08:54.382Z",
   "devdoc": {
     "methods": {
       "renounceOwnership()": {

@@ -329,10 +329,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1917,
-                        1918
+                        1928,
+                        1929
                       ],
-                      "referencedDeclaration": 1917,
+                      "referencedDeclaration": 1928,
                       "src": "604:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -651,10 +651,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1917,
-                                1918
+                                1928,
+                                1929
                               ],
-                              "referencedDeclaration": 1917,
+                              "referencedDeclaration": 1928,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -825,7 +825,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-19T18:45:26.248Z",
+  "updatedAt": "2022-01-19T22:08:54.374Z",
   "devdoc": {
     "methods": {
       "buyTokens(address)": {

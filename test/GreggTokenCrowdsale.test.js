@@ -9,6 +9,7 @@ const BigNumber = web3.utils.BN;
 
 const GreggToken = artifacts.require('GreggToken');
 const GreggTokenCrowdsale = artifacts.require("GreggTokenCrowdsale");
+const RefundVault = artifacts.require('./RefundVault');
 
 require('chai')
   .use(require('chai-as-promised'))
@@ -32,6 +33,7 @@ contract('GreggTokenCrowdsale', function([_, wallet, investor1, investor2]) {
         this.cap = ether('100');
         this.openingTime = latestTime() + duration.weeks(1);
         this.closingTime = this.openingTime + duration.weeks(1);
+        this.goal = ether('50');
 
         // Investor caps
         this.investorMinCap = ether('0.002');
@@ -44,7 +46,8 @@ contract('GreggTokenCrowdsale', function([_, wallet, investor1, investor2]) {
           this.token.address, 
           this.cap,
           this.openingTime,
-          this.closingTime
+          this.closingTime,
+          this.goal
         );
 
         // Transfer token ownership to crowdsale
@@ -53,8 +56,12 @@ contract('GreggTokenCrowdsale', function([_, wallet, investor1, investor2]) {
         // Add Investors to whitelist
         await this.crowdsale.addManyToWhitelist([investor1, investor2]);
 
+        // Track refund vault
+        this.vaultAddress = await this.crowdsale.vault();
+        this.vault = RefundVault.at(this.vaultAddress);
+
         // Advance time to crowdsale start
-        //await increaseTimeTo(this.openingTime + 1);
+        await increaseTimeTo(this.openingTime + 1);
     });
 
     describe('crowdsale', function() {
@@ -103,6 +110,18 @@ contract('GreggTokenCrowdsale', function([_, wallet, investor1, investor2]) {
       it('rejects contributions from non-whitelisted investors', async function() {
         const notWhitelisted = _;
         await this.crowdsale.buyTokens(notWhitelisted, { value: ether('1'), from: notWhitelisted}).should.be.rejectedWith(EVMRevert);
+      });
+    });
+
+    describe('refundable crowdsale', function() {
+      beforeEach(async function() {
+        await this.crowdsale.buyTokens(investor1, { value: ether('1'), from: investor1 });
+      });
+  
+      describe('during crowdsale', function() {
+        it('prevents the investor from claiming refund', async function() {
+          await this.vault.refund(investor1, { from: investor1 }).should.be.rejectedWith(EVMRevert);
+        });
       });
     });
 

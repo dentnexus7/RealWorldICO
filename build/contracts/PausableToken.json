@@ -498,7 +498,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1962,
+                        "referencedDeclaration": 1973,
                         "src": "364:5:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$1477",
@@ -738,7 +738,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1962,
+                        "referencedDeclaration": 1973,
                         "src": "545:5:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$1477",
@@ -987,7 +987,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1962,
+                        "referencedDeclaration": 1973,
                         "src": "718:5:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$1477",
@@ -1210,7 +1210,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1962,
+                        "referencedDeclaration": 1973,
                         "src": "903:5:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$1477",
@@ -1433,7 +1433,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1962,
+                        "referencedDeclaration": 1973,
                         "src": "1107:5:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$1477",
@@ -1909,7 +1909,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1962,
+                                  "referencedDeclaration": 1973,
                                   "type": "contract super PausableToken",
                                   "value": "super"
                                 },
@@ -2179,7 +2179,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1962,
+                                  "referencedDeclaration": 1973,
                                   "type": "contract super PausableToken",
                                   "value": "super"
                                 },
@@ -2433,7 +2433,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1962,
+                                  "referencedDeclaration": 1973,
                                   "type": "contract super PausableToken",
                                   "value": "super"
                                 },
@@ -2673,7 +2673,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1962,
+                                  "referencedDeclaration": 1973,
                                   "type": "contract super PausableToken",
                                   "value": "super"
                                 },
@@ -2913,7 +2913,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1962,
+                                  "referencedDeclaration": 1973,
                                   "type": "contract super PausableToken",
                                   "value": "super"
                                 },
@@ -2990,7 +2990,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-19T18:45:26.267Z",
+  "updatedAt": "2022-01-19T22:08:54.391Z",
   "devdoc": {
     "methods": {
       "allowance(address,address)": {
