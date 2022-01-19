@@ -308,10 +308,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2017,
-                        2018
+                        2050,
+                        2051
                       ],
-                      "referencedDeclaration": 2017,
+                      "referencedDeclaration": 2050,
                       "src": "407:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -391,10 +391,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2017,
-                        2018
+                        2050,
+                        2051
                       ],
-                      "referencedDeclaration": 2017,
+                      "referencedDeclaration": 2050,
                       "src": "560:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -975,10 +975,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                2017,
-                                2018
+                                2050,
+                                2051
                               ],
-                              "referencedDeclaration": 2017,
+                              "referencedDeclaration": 2050,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -1088,10 +1088,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                2017,
-                                2018
+                                2050,
+                                2051
                               ],
-                              "referencedDeclaration": 2017,
+                              "referencedDeclaration": 2050,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -1546,7 +1546,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-19T22:18:00.160Z",
+  "updatedAt": "2022-01-19T22:42:02.995Z",
   "devdoc": {
     "methods": {
       "pause()": {

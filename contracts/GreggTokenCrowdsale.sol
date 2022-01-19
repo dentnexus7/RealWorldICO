@@ -1,5 +1,8 @@
 pragma solidity 0.4.24;
 
+import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
+import "openzeppelin-solidity/contracts/token/ERC20/PausableToken.sol";
+import "openzeppelin-solidity/contracts/token/ERC20/MintableToken.sol";
 import "openzeppelin-solidity/contracts/crowdsale/Crowdsale.sol";
 import "openzeppelin-solidity/contracts/crowdsale/emission/MintedCrowdsale.sol";
 import "openzeppelin-solidity/contracts/crowdsale/validation/CappedCrowdsale.sol";
@@ -87,4 +90,16 @@ contract GreggTokenCrowdsale is Crowdsale, MintedCrowdsale, CappedCrowdsale, Tim
         require(_newContribution >= investorMinCap && _newContribution <= investorMaxCap);
         contributions[_beneficiary] = _newContribution;
     }
+
+    function finalization() internal {
+        if(goalReached()) {
+            MintableToken _mintableToken = MintableToken(token);
+            _mintableToken.finishMinting();
+
+            PausableToken(token).unpause();
+        }
+
+        super.finalization();
+    }
+
 }
