@@ -30,8 +30,8 @@ contract('GreggTokenCrowdsale', function([_, wallet, investor1, investor2]) {
         this.rate = 500;
         this.wallet = wallet;
         this.cap = ether('100');
-        // this.openingTime = latestTime() + duration.weeks(1);
-        // this.closingTime = this.openingTime + duration.weeks(1);
+        this.openingTime = latestTime() + duration.weeks(1);
+        this.closingTime = this.openingTime + duration.weeks(1);
 
         // Investor caps
         this.investorMinCap = ether('0.002');
@@ -42,16 +42,16 @@ contract('GreggTokenCrowdsale', function([_, wallet, investor1, investor2]) {
           this.rate, 
           this.wallet, 
           this.token.address, 
-          this.cap
-          // this.openingTime,
-          // this.closingTime
+          this.cap,
+          this.openingTime,
+          this.closingTime
         );
 
         // Transfer token ownership to crowdsale
         await this.token.transferOwnership(this.crowdsale.address);
 
         // Add Investors to whitelist
-        await this.crowdsale.addAddressesToWhitelist([investor1, investor2]);
+        await this.crowdsale.addManyToWhitelist([investor1, investor2]);
 
         // Advance time to crowdsale start
         //await increaseTimeTo(this.openingTime + 1);
@@ -92,12 +92,12 @@ contract('GreggTokenCrowdsale', function([_, wallet, investor1, investor2]) {
       });
     });
 
-    // describe('timed crowdsale', function() {
-    //   it('is open', async function() {
-    //     const isClosed = await this.crowdsale.hasClosed();
-    //     isClosed.should.be.false;
-    //   });
-    // });
+    describe('timed crowdsale', function() {
+      it('is open', async function() {
+        const isClosed = await this.crowdsale.hasClosed();
+        isClosed.should.be.false;
+      });
+    });
 
     describe('whitelisted crowdsale', function() {
       it('rejects contributions from non-whitelisted investors', async function() {
