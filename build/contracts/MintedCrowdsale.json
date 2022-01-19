@@ -149,7 +149,7 @@
         "id": 231,
         "nodeType": "ImportDirective",
         "scope": 255,
-        "sourceUnit": 868,
+        "sourceUnit": 955,
         "src": "53:45:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -255,7 +255,7 @@
                                     "referencedDeclaration": 12,
                                     "src": "703:5:1",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_ERC20_$729",
+                                      "typeIdentifier": "t_contract$_ERC20_$816",
                                       "typeString": "contract ERC20"
                                     }
                                   }
@@ -263,7 +263,7 @@
                                 "expression": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_contract$_ERC20_$729",
+                                      "typeIdentifier": "t_contract$_ERC20_$816",
                                       "typeString": "contract ERC20"
                                     }
                                   ],
@@ -306,10 +306,10 @@
                               "name": "MintableToken",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 867,
+                              "referencedDeclaration": 954,
                               "src": "681:13:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_MintableToken_$867_$",
+                                "typeIdentifier": "t_type$_t_contract$_MintableToken_$954_$",
                                 "typeString": "type(contract MintableToken)"
                               }
                             },
@@ -323,7 +323,7 @@
                             "nodeType": "FunctionCall",
                             "src": "681:29:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_MintableToken_$867",
+                              "typeIdentifier": "t_contract$_MintableToken_$954",
                               "typeString": "contract MintableToken"
                             }
                           },
@@ -334,7 +334,7 @@
                           "lValueRequested": false,
                           "memberName": "mint",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 847,
+                          "referencedDeclaration": 934,
                           "src": "681:34:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -367,10 +367,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1442,
-                        1443
+                        1552,
+                        1553
                       ],
-                      "referencedDeclaration": 1442,
+                      "referencedDeclaration": 1552,
                       "src": "673:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -524,7 +524,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 868,
+          "SourceUnit": 955,
           "absolutePath": "openzeppelin-solidity/contracts/token/ERC20/MintableToken.sol",
           "file": "../../token/ERC20/MintableToken.sol",
           "scope": 255,
@@ -689,10 +689,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1442,
-                                1443
+                                1552,
+                                1553
                               ],
-                              "referencedDeclaration": 1442,
+                              "referencedDeclaration": 1552,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -732,7 +732,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "mint",
-                                  "referencedDeclaration": 847,
+                                  "referencedDeclaration": 934,
                                   "type": "function (address,uint256) external returns (bool)"
                                 },
                                 "children": [
@@ -762,7 +762,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 867,
+                                          "referencedDeclaration": 954,
                                           "type": "type(contract MintableToken)",
                                           "value": "MintableToken"
                                         },
@@ -789,7 +789,7 @@
                                             "attributes": {
                                               "argumentTypes": [
                                                 {
-                                                  "typeIdentifier": "t_contract$_ERC20_$729",
+                                                  "typeIdentifier": "t_contract$_ERC20_$816",
                                                   "typeString": "contract ERC20"
                                                 }
                                               ],
@@ -902,7 +902,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-19T16:23:57.938Z",
+  "updatedAt": "2022-01-19T17:39:18.069Z",
   "devdoc": {
     "methods": {
       "buyTokens(address)": {

@@ -1,5 +1,7 @@
 import ether from './helpers/ether';
 import EVMRevert from './helpers/EVMRevert';
+import { increaseTimeTo, duration } from './helpers/increaseTime';
+import latestTime from './helpers/latestTime';
 
 const { assert } = require('chai');
 
@@ -26,18 +28,33 @@ contract('GreggTokenCrowdsale', function([_, wallet, investor1, investor2]) {
 
         // Crowdsale config
         this.rate = 500;
-        this.wallet =wallet;
+        this.wallet = wallet;
         this.cap = ether('100');
+        // this.openingTime = latestTime() + duration.weeks(1);
+        // this.closingTime = this.openingTime + duration.weeks(1);
 
         // Investor caps
         this.investorMinCap = ether('0.002');
         this.investorMaxCap = ether('50');
 
         // Crowdsale deploy
-        this.crowdsale = await GreggTokenCrowdsale.new(this.rate, this.wallet, this.token.address, this.cap);
+        this.crowdsale = await GreggTokenCrowdsale.new(
+          this.rate, 
+          this.wallet, 
+          this.token.address, 
+          this.cap
+          // this.openingTime,
+          // this.closingTime
+        );
 
         // Transfer token ownership to crowdsale
         await this.token.transferOwnership(this.crowdsale.address);
+
+        // Add Investors to whitelist
+        await this.crowdsale.addAddressesToWhitelist([investor1, investor2]);
+
+        // Advance time to crowdsale start
+        //await increaseTimeTo(this.openingTime + 1);
     });
 
     describe('crowdsale', function() {
@@ -72,6 +89,20 @@ contract('GreggTokenCrowdsale', function([_, wallet, investor1, investor2]) {
         const cap = await this.crowdsale.cap();
         assert.equal(cap.toString(), this.cap.toString(), "cap is correct");
         //cap.should.be.bignumber.equal(this.cap);
+      });
+    });
+
+    // describe('timed crowdsale', function() {
+    //   it('is open', async function() {
+    //     const isClosed = await this.crowdsale.hasClosed();
+    //     isClosed.should.be.false;
+    //   });
+    // });
+
+    describe('whitelisted crowdsale', function() {
+      it('rejects contributions from non-whitelisted investors', async function() {
+        const notWhitelisted = _;
+        await this.crowdsale.buyTokens(notWhitelisted, { value: ether('1'), from: notWhitelisted}).should.be.rejectedWith(EVMRevert);
       });
     });
 
