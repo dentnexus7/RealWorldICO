@@ -1482,7 +1482,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-19T23:27:41.791Z",
+  "updatedAt": "2022-01-20T00:24:47.226Z",
   "devdoc": {
     "methods": {
       "buyTokens(address)": {
